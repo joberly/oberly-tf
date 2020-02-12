@@ -1,3 +1,11 @@
+variable "do_api_token" {
+    default = "default-token"
+}
+
+variable "do_cluster_name" {
+    default = "default-cluster-name"
+}
+
 provider "digitalocean" {
     token = "${var.do_api_token}"
 }
